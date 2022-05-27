@@ -8,4 +8,4 @@ Observations and questions from the reading assignments throughout my Advance We
 | **Class**    | **Subject**   | **Link**                                                                                   |
 |-----------|-----------|-----------------------------------------------------------------------------------------|
 | Test |    Test   | [Link](https://github.com/mohammad-alshish)
-| Prep |   Terminal    | [Link](https://github.com/mohammad-alshish)
+| Prep |   Terminal    | [Link](https://mohammad-alshish.github.io/reading-notes/Terminal/Terminal)
