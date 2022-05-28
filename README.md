@@ -10,3 +10,4 @@ Observations and questions from the reading assignments throughout my Advance We
 | Test |    Test   | [Link](https://github.com/mohammad-alshish)
 | Prep |   Terminal    | [Link](https://mohammad-alshish.github.io/reading-notes/Terminal/Terminal)
 | Prep |   Sql    | [Link](https://mohammad-alshish.github.io/reading-notes/SQL/SQL)
+| Class01 |   Read01    | [Link](https://mohammad-alshish.github.io/reading-notes/Class01/Read01)
