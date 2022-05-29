@@ -59,3 +59,17 @@ Write few codes and see with your own eyes what happens for the names and the va
 
 ### 1. I want to know more about Big O cases.
 ### 2. I want to know how coding smimlir for math concepts that I have.
+
+The following links are for the screenshots reqaierd.
+[sql1](/SQL/assessts/sql1..jpg) 
+[sql2](/SQL/assessts/sql2.jpg)
+[sql3](/SQL/assessts/sql3.jpg)
+[sql4](/SQL/assessts/SQL4.jpg)
+[sql5](/SQL/assessts/SQL5.jpg)
+[sql6](/SQL/assessts/SQL6.jpg)
+[sql13](/SQL/assessts/SQL%2013.jpg)
+[sql14](/SQL/assessts/sql14.jpg)
+[sql15](/SQL/assessts/sql15.jpg)
+[sql16](/SQL/assessts/sql16.jpg)
+[sql17](/SQL/assessts/sql17.jpg)
+[sql18](/SQL/assessts/sql18.jpg)
