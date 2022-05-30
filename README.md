@@ -11,3 +11,4 @@ Observations and questions from the reading assignments throughout my Advance We
 | Prep |   Terminal    | [Link](https://mohammad-alshish.github.io/reading-notes/Terminal/Terminal)
 | Prep |   Sql    | [Link](https://mohammad-alshish.github.io/reading-notes/SQL/SQL)
 | Class01 |   Read01    | [Link](https://mohammad-alshish.github.io/reading-notes/Class01/Read01)
+| Class02 |   Read02  | [Link](https://mohammad-alshish.github.io/reading-notes/Class02/Read02)
