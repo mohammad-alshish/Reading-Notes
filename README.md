@@ -13,3 +13,4 @@ Observations and questions from the reading assignments throughout my Advance We
 | Class01 |   Read01    | [Link](https://mohammad-alshish.github.io/reading-notes/Class01/Read01)
 | Class02 |   Read02  | [Link](https://mohammad-alshish.github.io/reading-notes/Class02/Read02)
 | Class03 |   Read03  | [Link](https://mohammad-alshish.github.io/reading-notes/Class03/Read03)
+| Class04 |   Read04  | [Link](https://mohammad-alshish.github.io/reading-notes/Class04/Read04)
