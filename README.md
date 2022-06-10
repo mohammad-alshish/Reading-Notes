@@ -15,4 +15,4 @@ Observations and questions from the reading assignments throughout my Advance We
 | Class03 |   Read03  | [Link](https://mohammad-alshish.github.io/reading-notes/Class03/Read03)
 | Class04 |   Read04  | [Link](https://mohammad-alshish.github.io/reading-notes/Class04/Read04)
 | Class05 |   Read:linked list  | [Link](https://mohammad-alshish.github.io/reading-notes/Class05/Read:linkedlist)
-| Class06 |   Read06  | [Link](https://mohammad-alshish.github.io/reading-notes/Class06/Read06)
+| Class06 |   Read06  | [Link](https://mohammad-alshish.github.io/reading-notes/Class06/Readme06)
