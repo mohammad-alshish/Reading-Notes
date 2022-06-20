@@ -18,3 +18,4 @@ Observations and questions from the reading assignments throughout my Advance We
 | Class06 |   Read06  | [Link](https://mohammad-alshish.github.io/reading-notes/Class06/Readme06)
 | Class07 |   Read07  | [Link](https://mohammad-alshish.github.io/reading-notes/Class07/Read07)
 | Class08 |   Read08  | [Link](https://mohammad-alshish.github.io/reading-notes/Class08/Read08)
+| Class09 |   Read09  | [Link](https://mohammad-alshish.github.io/reading-notes/Class09/Read09)
