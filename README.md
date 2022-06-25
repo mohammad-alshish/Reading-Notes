@@ -20,3 +20,4 @@ Observations and questions from the reading assignments throughout my Advance We
 | Class08 |   Read08  | [Link](https://mohammad-alshish.github.io/reading-notes/Class08/Read08)
 | Class09 |   Read09  | [Link](https://mohammad-alshish.github.io/reading-notes/Class09/Read09)
 | Class10 |   Stacks and Queues  | [Link](https://mohammad-alshish.github.io/reading-notes/Class10/Read10)
+| Class11 |   Read11 | [Link](https://mohammad-alshish.github.io/reading-notes/Class11/Read11)
