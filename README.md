@@ -23,3 +23,4 @@ Observations and questions from the reading assignments throughout my Advance We
 | Class11 |   Read11 | [Link](https://mohammad-alshish.github.io/reading-notes/Class11/Read11)
 | Class12 |   Read12 | [Link](https://mohammad-alshish.github.io/reading-notes/Class12/Read12)
 | Class13 |   Read13 | [Link](https://mohammad-alshish.github.io/reading-notes/Class13/Read13)
+| Class14 |   Read14 | [Link](https://mohammad-alshish.github.io/reading-notes/Class14/Read14)
