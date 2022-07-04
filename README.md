@@ -25,3 +25,4 @@ Observations and questions from the reading assignments throughout my Advance We
 | Class13 |   Read13 | [Link](https://mohammad-alshish.github.io/reading-notes/Class13/Read13)
 | Class14 |   Read14 | [Link](https://mohammad-alshish.github.io/reading-notes/Class14/Read14)
 | Class15 |   Trees | [Link](https://mohammad-alshish.github.io/reading-notes/Class15/Trees)
+| Class16 |   Read16 | [Link](https://mohammad-alshish.github.io/reading-notes/Class16/Read16)
