@@ -34,7 +34,7 @@ link = one_a_tag[‘href’]
 ```
 - Finished code:
 ```
-  # Import libraries
+# Import libraries
 import requests
 import urllib.request
 import time
