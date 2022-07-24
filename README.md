@@ -28,3 +28,4 @@ Observations and questions from the reading assignments throughout my Advance We
 | Class16 |   Read16 | [Link](https://mohammad-alshish.github.io/reading-notes/Class16/Read16)
 | Class17 |   Read17 | [Link](https://mohammad-alshish.github.io/reading-notes/Class17/Read17)
 | Class18 |   Read18 | [Link](https://mohammad-alshish.github.io/reading-notes/Class18/Read18)
+| Class19 |   Intro to Django | [Link](https://mohammad-alshish.github.io/reading-notes/Class19/Read19)
