@@ -5,7 +5,7 @@ Observations and questions from the reading assignments throughout my Advance We
 
 ## Code 401 - Advanced Web Development
 
-| **Class**    | **Subject**   | **Link**                                                                                   |
+| **Class**    | **Subject**   | **Links**                                                                                   |
 |-----------|-----------|-----------------------------------------------------------------------------------------|
 | Test |    Test   | [Link](https://github.com/mohammad-alshish)
 | Prep |   Terminal    | [Link](https://mohammad-alshish.github.io/reading-notes/Terminal/Terminal)
@@ -29,3 +29,4 @@ Observations and questions from the reading assignments throughout my Advance We
 | Class17 |   Read17 | [Link](https://mohammad-alshish.github.io/reading-notes/Class17/Read17)
 | Class18 |   Read18 | [Link](https://mohammad-alshish.github.io/reading-notes/Class18/Read18)
 | Class19 |   Intro to Django | [Link](https://mohammad-alshish.github.io/reading-notes/Class19/Read19)
+ Class20 |   Django Models | [Link](https://mohammad-alshish.github.io/reading-notes/Class20/Read20)
