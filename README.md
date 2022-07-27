@@ -29,4 +29,5 @@ Observations and questions from the reading assignments throughout my Advance We
 | Class17 |   Read17 | [Link](https://mohammad-alshish.github.io/reading-notes/Class17/Read17)
 | Class18 |   Read18 | [Link](https://mohammad-alshish.github.io/reading-notes/Class18/Read18)
 | Class19 |   Intro to Django | [Link](https://mohammad-alshish.github.io/reading-notes/Class19/Read19)
- Class20 |   Django Models | [Link](https://mohammad-alshish.github.io/reading-notes/Class20/Read20)
+|Class20 |   Django Models | [Link](https://mohammad-alshish.github.io/reading-notes/Class20/Read20)
+|Class21 |   Django CRUD and Forms | [Link](https://mohammad-alshish.github.io/reading-notes/Class21/Read21)
