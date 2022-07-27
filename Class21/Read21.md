@@ -150,13 +150,13 @@ Go ahead and create the `member_create_form.html` template, which should be in t
           -member_create_form.html
 Add the following code to the template we created above.
 
-    {% block content %}
-    <form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Submit"/>
-    </form>
-    {% endblock %}
+      {% block content %}
+      <form method="POST">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" value="Submit"/>
+      </form>
+      {% endblock %}
 
 The tag `{{ form.as_p }}` renders the form using paragraphs while `{% csrf_token %}` protects our forms from CSRF attacks. You can also render the form using `{{form-as_table}}` which renders the form using a table.
 
