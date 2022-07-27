@@ -325,7 +325,6 @@ You can also use the `get_absolute_url` method in models to provide a redirect l
 If you use `get_absolute_url()` on the `Member` model, you dont need to provide a success_url for `MemberUpdate` or `MemberDelete`
 
 - ### Conclusion
-
 When creating forms with generic views, the data is submitted directly to the model. This ensures that you don’t have to worry about validation, incorrect data since all the heavy lifting has been done for you.
 
 Congratulations, that all you need to create forms in Django. You can read more here on how to add authentication in Django.
