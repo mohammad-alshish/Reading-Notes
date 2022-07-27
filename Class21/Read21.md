@@ -57,11 +57,11 @@ We know that a membership application form takes in personal information, so we 
 
 The member’s app has a file `models.py`. Add the following code for the `Member` model.
 
-```
-from django.db import models
 
-# Create your models here.
-class Member(models.Model):
+    from django.db import models
+
+    # Create your models here.
+    class Member(models.Model):
     first_name = models.CharField(max_length= 30)
     last_name = models.CharField(max_length= 30)
     email = models.EmailField()
@@ -72,7 +72,6 @@ class Member(models.Model):
 
     def __str__(self):
         return self.first_name + " " + self.last_name
-```
 
 - ### Apply migrations
 
@@ -83,18 +82,16 @@ class Member(models.Model):
   
 A simple HTML form looks like this:
 
-```
-<form action=" ">
-  <label for="firstname">First name:</label><br>
-  <input type="text" id="firstname" name="firstname" value="Enter first name"><br>
-  <label for="lastname">Last name:</label><br>
-  <input type="text" id="lastname" name="lastname" value="Enter last name"><br><br>
-  <input type="submit" value="Submit">
-</form> 
-```
+    <form action=" ">
+      <label for="firstname">First name:</label><br>
+      <input type="text" id="firstname" name="firstname" value="Enter first name"><br>
+      <label for="lastname">Last name:</label><br>
+      <input type="text" id="lastname" name="lastname" value="Enter last name"><br><br>
+      <input type="submit" value="Submit">
+    </form> 
 
 When rendered on a browser, it looks like this:
-![](1_49ckhA1k7Ij0JNd4wuWHHg.png)
+![a](1_49ckhA1k7Ij0JNd4wuWHHg.png)
 
 - ### Creating Forms from Models
 
@@ -107,15 +104,13 @@ Next, import the `Member model` as well as `forms` from `django`, as shown below
 
 After the imports, we will then create a class for each form we wish to have. Since we need to have a page that allows members to submit their details, the first form will be a form that accepts user input.
 
-```
-from django import forms
-from .models import Member
+      from django import forms
+      from .models import Member
 
-class MemberCreateForm(forms.ModelForm):
-    class Meta:
-         model = Member
-         fields = ("first_name","last_name","email","address","phone","age")
-```
+      class MemberCreateForm(forms.ModelForm):
+          class Meta:
+              model = Member
+              fields = ("first_name","last_name",
 
 The form takes in one parameter `forms.ModelForm`, `forms.ModelForm` is a Django helper class. Since we have already created our fields in the model, there is no need to create the fields again. The inner `Meta` class will tell the application the model and fields we will be using.
 
@@ -124,7 +119,7 @@ The form takes in one parameter `forms.ModelForm`, `forms.ModelForm` is a Django
 Now that we are done with the `MemberCreate` form, we need to render it on a template with the help of generic class-based views. Django provides generic class-based views which handle form processing.
 
 These classes are grouped as follows.
-![](1_htRZZRY7QCvgGmWJE7iXAQ.png)
+![a](1_htRZZRY7QCvgGmWJE7iXAQ.png)
 
 The most commonly used views are :
 
@@ -155,15 +150,13 @@ Go ahead and create the `member_create_form.html` template, which should be in t
           -member_create_form.html
 Add the following code to the template we created above.
 
-```
-{% block content %}
-<form method="POST">
-{% csrf_token %}
-{{ form.as_p }}
-<input type="submit" value="Submit"/>
-</form>
-{% endblock %}
-```
+    {% block content %}
+    <form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit"/>
+    </form>
+    {% endblock %}
 
 The tag `{{ form.as_p }}` renders the form using paragraphs while `{% csrf_token %}` protects our forms from CSRF attacks. You can also render the form using `{{form-as_table}}` which renders the form using a table.
 
@@ -171,28 +164,24 @@ The tag `{{ form.as_p }}` renders the form using paragraphs while `{% csrf_token
 
 We are almost there to see the form rendered on the browser. The last part is to hook the view in the path of our urls. Update the root `urls.py` file as follows
 
-```
-from django.contrib import admin
-from django.urls import path,include
-urlpatterns = [
-path('admin/', admin.site.urls),
-path("", include('members.urls')),
-]
-```
+    from django.contrib import admin
+    from django.urls import path,include
+    urlpatterns = [
+    path('admin/', admin.site.urls),
+    path("", include('members.urls')),
+    ]
 
 Create a file `members/urls.py` and add the path to `member/create with` the MemberCreate View and set the name to `createmember`.
 
-```
-from django.urls import path
-from . import views
+    from django.urls import path
+    from . import views
 
-urlpatterns = [
-   path('member/create', views.MemberCreate.as_view(), name="createmember"),
-]
-```
+    urlpatterns = [
+      path('member/create', views.MemberCreate.as_view(), name="createmember"),
+    ]
 
 The form is now complete. If you navigate to `http:localhost:0.0.0.0:8000/members`, you should see the form rendered as we intended.
-![](1_1fDk_6pHsXa5VcpfUl4OLw.png)
+![a](1_1fDk_6pHsXa5VcpfUl4OLw.png)
 
 The criteria for creating all other forms will be the same as the above, which is:
 
@@ -217,20 +206,17 @@ A member should also have the option to edit or delete their information, let's 
 Let’s create the views for rendering. Open `views.py` and import the `UpdateView` and `DeleteView` class from `django.views.generic.edit`.
 Create the `MemberUpdate` and `MemberDelete` classes and declare the necessary properties. In the MemberDelete class, we dont need to display any fields.
 
-```
-from django.views.generic.edit import CreateView,UpdateView,DeleteView
+    from django.views.generic.edit import CreateView,UpdateView,DeleteView
 
-class MemberUpdate(UpdateView):
-    model = Member 
-    template_name = "members/member_update_form.html"
-    form_class = MemberUpdateForm
-     
+    class MemberUpdate(UpdateView):
+        model = Member 
+        template_name = "members/member_update_form.html"
+        form_class = MemberUpdateForm
+        
 
-class MemberDelete(DeleteView):
-    model = Member 
-    template_name = "members/member_delete_form.html"
-    
-```
+    class MemberDelete(DeleteView):
+        model = Member 
+        template_name = "members/member_delete_form.html"
 
 - ### Create the templates
 
@@ -238,54 +224,48 @@ Create the `member_update_form.html` and `member_delete_form.html` in the templa
 
 - ### member_update_form.html
 
-```
-{% block content %}
-<h2>Update Member Details</h2>
-<form method="post">
-<div>
-  {% csrf_token %} 
-  {{ form.as_p }}
-  <input type="submit" value="Save" />
-</div>
-</form>
-{% endblock %}
-```
+      {% block content %}
+      <h2>Update Member Details</h2>
+      <form method="post">
+      <div>
+        {% csrf_token %} 
+        {{ form.as_p }}
+        <input type="submit" value="Save" />
+      </div>
+      </form>
+      {% endblock %}
 
 - ### member_delete_form.html
 
-```
-{% block content %}
+      {% block content %}
 
-<h1>Delete Your Details</h1>
+      <h1>Delete Your Details</h1>
 
-<p>Are you sure you want to delete your details: {{ member }}?</p>
+      <p>Are you sure you want to delete your details: {{ member }}?</p>
 
-<form action="" method="POST">
-  {% csrf_token %}
-  <input type="submit" value="Confirm">
-</form>
+      <form action="" method="POST">
+        {% csrf_token %}
+        <input type="submit" value="Confirm">
+      </form>
 
-{% endblock %}
-```
+      {% endblock %}
 
 - ### Add the Urls
 
-```
 from django.urls import path
 
 from . import views
 
-urlpatterns = [
-   path('member/create', views.MemberCreate.as_view(), name="createmember"),
-   path('member/update/<pk>', views.MemberUpdate.as_view(), name="updatemember"),
-   path('member/delete/<pk>', views.MemberDelete.as_view(), name="deletemember"),
-  
-]
-```
+    urlpatterns = [
+      path('member/create', views.MemberCreate.as_view(), name="createmember"),
+      path('member/update/<pk>', views.MemberUpdate.as_view(), name="updatemember"),
+      path('member/delete/<pk>', views.MemberDelete.as_view(), name="deletemember"),
+      
+    ]
 
 Test the forms:
-![](1_BJFCDOY7HWJn8jdKs_uN2Q.png)
-![](1_VBwn5hlUgqYkKkagsUIJ4g.png)
+![q](1_BJFCDOY7HWJn8jdKs_uN2Q.png)
+![q](1_VBwn5hlUgqYkKkagsUIJ4g.png)
 
 - ### Redirecting
 
@@ -293,34 +273,29 @@ Our forms are working fine, but once submitted, the user should be redirected to
 
 Open views.py and create a view that renders the homepage.
 
-```
-from django.shortcuts import render
+    from django.shortcuts import render
 
-
-# Create your views here.
-def home(request):
-    member_details = Member.objects.all()
-    context = {"details":member_details}
-    return render(request, "members/home.html", context)
-```
+    # Create your views here.
+    def home(request):
+        member_details = Member.objects.all()
+        context = {"details":member_details}
+        return render(request, "members/home.html", context)
 
 - ### home.html template
   
-```
-<!doctype html>
-<html>
-  <body>
-    <h1>All Members</h1>
-            {% for member in details %}
-            <hr></hr>
-       <li>Names : {{ member.first_name }} {{ member.last_name }} </li>
+      <!doctype html>
+      <html>
+        <body>
+          <h1>All Members</h1>
+                  {% for member in details %}
+                  <hr></hr>
+            <li>Names : {{ member.first_name }} {{ member.last_name }} </li>
 
-       <li>Age: {{ member.age }}</li>
+            <li>Age: {{ member.age }}</li>
 
-{% endfor %}
-  </body>
-</html>
-```
+      {% endfor %}
+        </body>
+      </html>
 
 - #### update the urls.py
 
@@ -328,21 +303,19 @@ def home(request):
 
 - #### Update the views to include a `success_url`
 
-```
-<!doctype html>
-<html>
-  <body>
-    <h1>All Members</h1>
-            {% for member in details %}
-            <hr></hr>
-       <li>Names : {{ member.first_name }} {{ member.last_name }} </li>
+      <!doctype html>
+      <html>
+        <body>
+          <h1>All Members</h1>
+                  {% for member in details %}
+                  <hr></hr>
+            <li>Names : {{ member.first_name }} {{ member.last_name }} </li>
 
-       <li>Age: {{ member.age }}</li>
+            <li>Age: {{ member.age }}</li>
 
-{% endfor %}
-  </body>
-</html>
-```
+      {% endfor %}
+        </body>
+      </html>
 
 You can also use the `get_absolute_url` method in models to provide a redirect link. get_absolute_url is a Django convention that ensures that the user does not resubmit data again.
 
