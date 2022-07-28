@@ -31,3 +31,4 @@ Observations and questions from the reading assignments throughout my Advance We
 | Class19 |   Intro to Django | [Link](https://mohammad-alshish.github.io/reading-notes/Class19/Read19)
 |Class20 |   Django Models | [Link](https://mohammad-alshish.github.io/reading-notes/Class20/Read20)
 |Class21 |   Django CRUD and Forms | [Link](https://mohammad-alshish.github.io/reading-notes/Class21/Read21)
+|Class22 |   Django Custom User | [Link](https://mohammad-alshish.github.io/reading-notes/Class22/Read22)

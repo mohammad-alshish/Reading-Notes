@@ -1,4 +1,4 @@
-# Django Forms & CRUD
+<!-- # Django Forms & CRUD
 
 ## Working with Django forms in a Django ap
 
@@ -310,10 +310,8 @@ Open views.py and create a view that renders the homepage.
                   {% for member in details %}
                   <hr></hr>
             <li>Names : {{ member.first_name }} {{ member.last_name }} </li>
-
             <li>Age: {{ member.age }}</li>
-
-      {% endfor %}
+          {% endfor %}
         </body>
       </html>
 
@@ -329,4 +327,4 @@ If you use `get_absolute_url()` on the `Member` model, you dont need to provide 
 
 When creating forms with generic views, the data is submitted directly to the model. This ensures that you don’t have to worry about validation, incorrect data since all the heavy lifting has been done for you.
 
-Congratulations, that all you need to create forms in Django. You can read more here on how to add authentication in Django.
+Congratulations, that all you need to create forms in Django. You can read more here on how to add authentication in Django. -->
