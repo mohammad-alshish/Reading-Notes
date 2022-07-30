@@ -1,7 +1,6 @@
-# Django Custom User
-
 ## Django Custum User Model
-- Django ships with a built-in User model for authentication. 
+
+- Django ships with a built-in User model for authentication.
 - Use a custom user model instead for real world projects.
 - setup steps:
   - create and navigate into a dedicated directory called accounts for our code
@@ -10,6 +9,7 @@
   - make a new app accounts
   - start the local web server
 - Commands:
+
 ```
 $ cd ~/Desktop
 $ mkdir accounts && cd accounts
@@ -19,6 +19,7 @@ $ pipenv shell
 (accounts) $ python manage.py startapp accounts
 (accounts) $ python manage.py runserver
 ```
+
 - wait until after we've created our new custom user model before migrating data.
 - AbstractUser subclasses AbstractBaseUser but provides more default configuration.
 - four steps for creating initial custom user model:
@@ -27,6 +28,7 @@ $ pipenv shell
   - create new UserCreation and UserChangeForm
   - update the admin
 - config settings file:
+
 ```
 # config/settings.py
 INSTALLED_APPS = [
@@ -41,7 +43,9 @@ INSTALLED_APPS = [
 ...
 AUTH_USER_MODEL = 'accounts.CustomUser' # new
 ```
+
 - add the model:
+
 ```
 # accounts/models.py
 from django.contrib.auth.models import AbstractUser
@@ -54,7 +58,9 @@ class CustomUser(AbstractUser):
     def __str__(self):
         return self.username
 ```
+
 - Subclass existing forms:
+
 ```
 # accounts/forms.py
 from django import forms
@@ -73,7 +79,9 @@ class CustomUserChangeForm(UserChangeForm):
         model = CustomUser
         fields = ('username', 'email')
 ```
+
 - Update admin file:
+
 ```
 # accounts/admin.py
 from django.contrib import admin
@@ -92,12 +100,16 @@ admin.site.register(CustomUser, CustomUserAdmin)
 ```
 
 ## DjangoX
+
 - Install DjangoX by cloning first:
+
 ```
-$ git clone https://github.com/wsvincent/djangox.git
-$ cd djangox
+git clone https://github.com/wsvincent/djangox.git
+cd djangox
 ```
+
 - Install via Pip:
+
 ```
 $ python3 -m venv djangox
 $ source djangox/bin/activate
@@ -107,7 +119,9 @@ $ source djangox/bin/activate
 (djangox) $ python manage.py runserver
 # Load the site at http://127.0.0.1:8000
 ```
+
 - Setup:
+
 ```
 # Run Migrations
 (djangox) $ python manage.py migrate
