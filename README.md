@@ -33,3 +33,4 @@ Observations and questions from the reading assignments throughout my Advance We
 |Class21 |   Django CRUD and Forms | [Link](https://mohammad-alshish.github.io/reading-notes/Class21/Read21)
 |Class22 |   Django Custom User | [Link](https://mohammad-alshish.github.io/reading-notes/Class22/Read22)
 |Class23 |   Hash Tables | [Link](https://mohammad-alshish.github.io/reading-notes/Class23/Read23)
+|Class24 |   Django REST Framework & Docker | [Link](https://mohammad-alshish.github.io/reading-notes/Class24/Read24)
