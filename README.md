@@ -34,3 +34,4 @@ Observations and questions from the reading assignments throughout my Advance We
 |Class22 |   Django Custom User | [Link](https://mohammad-alshish.github.io/reading-notes/Class22/Read22)
 |Class23 |   Hash Tables | [Link](https://mohammad-alshish.github.io/reading-notes/Class23/Read23)
 |Class24 |   Django REST Framework & Docker | [Link](https://mohammad-alshish.github.io/reading-notes/Class24/Read24)
+|Class25 |   Permissions & Postgresql | [Link](https://mohammad-alshish.github.io/reading-notes/Class25/Read25)
