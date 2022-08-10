@@ -10,7 +10,6 @@
 - DIfferent HTTP responses:
 ```
 HTTP 403 Forbidden response: request was successfully authenticated, but permission was denied OR request was not successfully authenticated, and the highest priority authentication class does not use WWW-Authenticate headers.
-
 HTTP 401 Unauthorized response, with an appropriate WWW-Authenticate header:  request was not successfully authenticated, and the highest priority authentication class does use WWW-Authenticate headers.
 ```
 - Object level permissions are used to determine if a user should be allowed to act on a particular object, which will typically be a model instance.
