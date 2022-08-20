@@ -38,3 +38,4 @@ Observations and questions from the reading assignments throughout my Advance We
 |Class26 |   Authentication & Production Server | [Link](https://mohammad-alshish.github.io/reading-notes/Class26/Read26)
 |Class27 |   API Deployment | [Link](https://mohammad-alshish.github.io/reading-notes/Class27/Read27)
 |Class28 |   Graphs | [Link](https://mohammad-alshish.github.io/reading-notes/Class28/Read28)
+|Class29 |   DSA Review | [Link](https://mohammad-alshish.github.io/reading-notes/Class29/Read29)
